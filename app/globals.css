@@ -82,4 +82,16 @@
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
   }
+
+  .grad-primary {
+    background: linear-gradient(90deg, #0f34ed 0%, #ed1e79 100%);
+    width: 181px;
+  }
+
+  .navbar {
+    backdrop-filter: 'blur(16px) saturate(180%)';
+    background-color: 'rgba(17, 25, 40, 0.75)';
+    border-radius: '12px';
+    border: '1px solid rgba(255, 255, 255, 0.125)';
+  }
 }

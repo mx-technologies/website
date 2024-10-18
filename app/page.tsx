@@ -9,6 +9,7 @@ export default function Home() {
       <div className='max-w-7xl w-full'>
         <Nav navItems={navItems} />
         <Hero />
+        <div className='p-80'>Herl</div>
       </div>
     </main>
   );

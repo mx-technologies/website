@@ -1,4 +1,5 @@
 import { SpaceGrotesk } from '@/lib/utils';
+import Image from 'next/image';
 import { FaLocationArrow } from 'react-icons/fa6';
 
 import MagicButton from './MagicButton';
@@ -62,14 +63,17 @@ const Hero = () => {
             className={`${SpaceGrotesk.className} text-center mt-8 text-[20px] w-[70%]`}
           />
 
-          <a href='#about'>
-            <MagicButton
-              title='Get started!'
-              // icon={<FaLocationArrow />}
-              position='right'
-            />
+          <a href='#about' className='mt-8'>
+            <MagicButton title='Get started!' position='right' />
           </a>
         </div>
+        <Image
+          src={'network.svg'}
+          className='absolute mt-[-30rem] ml-[32rem]'
+          alt='network'
+          width={800}
+          height={300}
+        />
       </div>
     </div>
   );
