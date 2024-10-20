@@ -1,6 +1,5 @@
 import { SpaceGrotesk } from '@/lib/utils';
 import Image from 'next/image';
-import { FaLocationArrow } from 'react-icons/fa6';
 import { ButtonGenerateEffect } from './ButtonGenerateEffect';
 
 import MagicButton from './MagicButton';

@@ -4,7 +4,6 @@ import Services from '@/components/ui/Services';
 import TechStack from '@/components/ui/TechStack';
 import WhyChooseUs from '@/components/ui/WhyChooseUs';
 import { navItems } from '@/data';
-import Image from 'next/image';
 
 export default function Home() {
   return (

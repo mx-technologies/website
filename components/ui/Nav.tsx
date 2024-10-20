@@ -8,11 +8,9 @@ import {
   useScroll,
 } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Nav = ({
-  navItems,
   className,
 }: {
   navItems: {
@@ -30,7 +28,7 @@ const Nav = ({
   useMotionValueEvent(scrollYProgress, 'change', (current) => {
     // Check if current is not undefined and is a number
     if (typeof current === 'number') {
-      let direction = current! - scrollYProgress.getPrevious()!;
+      const direction = current! - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
         // also set true for the initial state

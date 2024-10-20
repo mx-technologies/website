@@ -1,5 +1,4 @@
-import { SpaceGrotesk, SpaceGroteskBold } from '@/lib/utils';
-import Image from 'next/image';
+import { SpaceGroteskBold } from '@/lib/utils';
 import React from 'react';
 
 const Services = () => {
@@ -30,8 +29,8 @@ const Services = () => {
               specific business challenges.
             </p>
             <p className='text-gray-600'>
-              Whether you're in eCommerce, healthcare, finance, or any other
-              sector, we craft software that fits seamlessly into your
+              Whether you&apos;re in eCommerce, healthcare, finance, or any
+              other sector, we craft software that fits seamlessly into your
               workflows.
             </p>
           </div>

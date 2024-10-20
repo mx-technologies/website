@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { motion, stagger, useAnimate } from 'framer-motion';
+import { motion, useAnimate } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
 export const ButtonGenerateEffect = ({
@@ -10,10 +10,9 @@ export const ButtonGenerateEffect = ({
   el: JSX.Element;
   className?: string;
 }) => {
-  const [scope, animate] = useAnimate();
+  const [scope] = useAnimate();
 
   const [isVisible, setIsVisible] = useState(false);
-  const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
