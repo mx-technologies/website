@@ -8,6 +8,12 @@ export const SpaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
 });
 
+export const SpaceGroteskBold = Space_Grotesk({
+  weight: ['700'],
+  style: ['normal'],
+  subsets: ['latin'],
+});
+
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }

@@ -94,4 +94,33 @@
     border-radius: '12px';
     border: '1px solid rgba(255, 255, 255, 0.125)';
   }
+
+  .duration-2000 {
+    transition-duration: 2000ms;
+  }
+
+  .wcu-title {
+    font-weight: 700;
+    line-height: 61.25px;
+    text-align: center;
+  }
+
+  .mx-border {
+    border: 1px solid linear-gradient(90deg, #adc9ff 0%, #ff9fc9 100%);
+    /* border-image-source: linear-gradient(90deg, #adc9ff 0%, #ff9fc9 100%); */
+  }
+
+  .mx-color {
+    background: linear-gradient(to right, #4f46e5, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+
+  .mx-gray-color {
+    background: linear-gradient(270deg, #676767 0%, #d0d0d0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
 }

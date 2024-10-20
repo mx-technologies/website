@@ -23,14 +23,14 @@ const MagicButton = ({
 }) => {
   return (
     <button
-      className='relative inline-flex h-14 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none bg-[linear-gradient(90deg, #0F34ED 0%, #ED1E79 100%)]'
+      className='relative inline-flex h-14 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none bg-[linear-gradient(90deg, #0F34ED 0%, #ED1E79 100%)] cursor-pointer'
       onClick={handleClick}
     >
       <span className='absolute  animate-[spin_2s_linear_infinite] ' />
       {/* remove px-3 py-1, add px-5 gap-2 */}
       <span
         className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
-       grad-primary px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2 ${otherClasses}`}
+       grad-primary px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2 ${otherClasses} border border-white-200`}
       >
         {position === 'left' && icon}
         {title}
