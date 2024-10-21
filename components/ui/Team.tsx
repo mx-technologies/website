@@ -1,7 +1,5 @@
 import { SpaceGroteskBold } from '@/lib/utils';
-import Image from 'next/image';
 import React from 'react';
-import { IoLogoLinkedin } from 'react-icons/io5';
 
 const Team = () => {
   return (
