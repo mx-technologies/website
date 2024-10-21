@@ -51,7 +51,9 @@ const TechStack = () => {
           <h3 className='text-lg font-semibold text-pink-500 mb-2'>
             Backend Development
           </h3>
-          <p>Node.js, Python, Flask, Express.js, NestJS</p>
+          <p className='text-[#AEAEAE]'>
+            Node.js, Python, Flask, Express.js, NestJS
+          </p>
         </div>
 
         {/* <!-- Frontend Development --> */}
@@ -59,7 +61,9 @@ const TechStack = () => {
           <h3 className='text-lg font-semibold text-pink-500 mb-2'>
             Frontend Development
           </h3>
-          <p>React.js, Next.js, Tailwind CSS, HTML5, CSS3, JavaScript</p>
+          <p className='text-[#AEAEAE]'>
+            React.js, Next.js, Tailwind CSS, HTML5, CSS3, JavaScript
+          </p>
         </div>
 
         {/* <!-- Database Management --> */}
@@ -67,7 +71,7 @@ const TechStack = () => {
           <h3 className='text-lg font-semibold text-pink-500 mb-2'>
             Database Management
           </h3>
-          <p>MySQL, PostgreSQL, MongoDB</p>
+          <p className='text-[#AEAEAE]'>MySQL, PostgreSQL, MongoDB</p>
         </div>
 
         {/* <!-- Cloud Services --> */}
@@ -75,13 +79,13 @@ const TechStack = () => {
           <h3 className='text-lg font-semibold text-pink-500 mb-2'>
             Cloud Services
           </h3>
-          <p>AWS, Google Cloud</p>
+          <p className='text-[#AEAEAE]'>AWS, Google Cloud</p>
         </div>
 
         {/* <!-- DevOps --> */}
         <div className='p-6 border border-gray-700 rounded-lg'>
           <h3 className='text-lg font-semibold text-pink-500 mb-2'>DevOps</h3>
-          <p>Docker, Kubernetes</p>
+          <p className='text-[#AEAEAE]'>Docker, Kubernetes</p>
         </div>
 
         {/* <!-- Mobile Development --> */}
@@ -89,7 +93,7 @@ const TechStack = () => {
           <h3 className='text-lg font-semibold text-pink-500 mb-2'>
             Mobile Development
           </h3>
-          <p>React Native</p>
+          <p className='text-[#AEAEAE]'>React Native</p>
         </div>
 
         {/* <!-- Version Control --> */}
@@ -97,7 +101,7 @@ const TechStack = () => {
           <h3 className='text-lg font-semibold text-pink-500 mb-2'>
             Version Control
           </h3>
-          <p>Git, GitHub</p>
+          <p className='text-[#AEAEAE]'>Git, GitHub</p>
         </div>
       </div>
     </section>

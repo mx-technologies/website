@@ -1,6 +1,7 @@
 import Hero from '@/components/ui/Hero';
 import Nav from '@/components/ui/Nav';
 import Services from '@/components/ui/Services';
+import Team from '@/components/ui/Team';
 import TechStack from '@/components/ui/TechStack';
 import WhyChooseUs from '@/components/ui/WhyChooseUs';
 import { navItems } from '@/data';
@@ -17,6 +18,7 @@ export default function Home() {
       <WhyChooseUs />
       <Services />
       <TechStack />
+      <Team />
     </main>
   );
 }

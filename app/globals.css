@@ -123,4 +123,8 @@
     -webkit-text-fill-color: transparent;
     font-weight: bold;
   }
+
+  .diagonal-section {
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  }
 }
