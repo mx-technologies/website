@@ -18,7 +18,7 @@ const TestimonialCarousel = () => {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className='w-full max-w-3xl'
+      className='p-2 w-full md:max-w-3xl'
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
@@ -50,8 +50,9 @@ const TestimonialCarousel = () => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+
+      <CarouselPrevious className='hidden md:block' />
+      <CarouselNext className='hidden md:block' />
     </Carousel>
   );
 };
