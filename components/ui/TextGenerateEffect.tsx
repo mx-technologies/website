@@ -1,7 +1,9 @@
 'use client';
 import { useEffect } from 'react';
 import { motion, stagger, useAnimate } from 'framer-motion';
-import { cn } from '@/lib/utils';
+import { cn, SpaceGroteskBold } from '@/lib/utils';
+
+const recognizedWords = ['Mx', 'Technologies,'];
 
 export const TextGenerateEffect = ({
   words,
@@ -34,7 +36,11 @@ export const TextGenerateEffect = ({
             <motion.span
               key={word + idx}
               // change here if idx is greater than 3, change the text color to #CBACF9
-              className={` ${idx >= 2 ? 'font-[1000]' : ''} opacity-0`}
+              className={` ${
+                idx >= 2 && idx < 4 && recognizedWords.includes(word)
+                  ? SpaceGroteskBold.className
+                  : ''
+              } opacity-0`}
             >
               {word}{' '}
             </motion.span>

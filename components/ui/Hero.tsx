@@ -8,7 +8,7 @@ import { TextGenerateEffect } from './TextGenerateEffect';
 
 const Hero = () => {
   return (
-    <div className='pb-20 pt-56'>
+    <div className='pb-20 pt-20 md:pt-56'>
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -42,8 +42,8 @@ const Hero = () => {
         />
       </div>
 
-      <div className='flex justify-center relative my-20 z-10'>
-        <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
+      <div className='flex justify-center relative my-20'>
+        <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center z-10'>
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
            *
@@ -74,8 +74,8 @@ const Hero = () => {
           </div>
         </div>
         <Image
-          src={'network.svg'}
-          className='absolute mt-[-30rem] ml-[32rem]'
+          src={'/images/network.svg'}
+          className='absolute mt-[-20rem] ml-[20rem] md:mt-[-30rem] md:ml-[32rem] bg-transparent'
           alt='network'
           width={800}
           height={300}

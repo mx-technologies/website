@@ -3,7 +3,7 @@ import React from 'react';
 
 const TechStack = () => {
   return (
-    <section className='container mx-auto py-16 text-center'>
+    <section id='tech-stack' className='container mx-auto py-16 text-center'>
       <h2 className={`${SpaceGroteskBold.className} text-4xl font-bold mb-6`}>
         Technology Stack
       </h2>

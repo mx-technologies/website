@@ -77,8 +77,8 @@ const WhyChooseUs = () => {
           </div>
         </div>
 
-        <div className='gradient-border'>
-          <button className='mt-8 bg-white text-blue-600 font-semibold py-3 px-6 rounded-lg mx-border shadow-md hover:bg-blue-100'>
+        <div>
+          <button className='gradient-border mt-8 bg-white text-blue-600 font-semibold py-3 px-6 rounded-lg mx-border shadow-md hover:bg-blue-100'>
             <p className={`mx-color ${SpaceGrotesk.className}`}>
               Reach Out to Us!
             </p>
