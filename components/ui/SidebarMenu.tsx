@@ -1,15 +1,11 @@
 'use client';
 
-import { Button, Drawer, Sidebar, TextInput } from 'flowbite-react';
+import { Drawer, Sidebar } from 'flowbite-react';
 import { useState } from 'react';
 import {
   HiChartPie,
-  HiClipboard,
-  HiCollection,
-  HiInformationCircle,
   HiLogin,
   HiPencil,
-  HiSearch,
   HiShoppingBag,
   HiUsers,
 } from 'react-icons/hi';
