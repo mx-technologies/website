@@ -25,7 +25,7 @@ const TestimonialCarousel = () => {
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>
-            <div className='flex items-center space-x-4 bg-white text-black rounded-lg shadow-lg p-6 max-w-3xl'>
+            <div className='flex flex-col md:flex-row items-center space-x-4 bg-white text-black rounded-lg shadow-lg p-6 max-w-3xl'>
               {/* <!-- Profile Picture --> */}
               <img
                 className='w-20 h-20 rounded-full object-cover'

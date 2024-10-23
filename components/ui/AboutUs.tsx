@@ -10,7 +10,7 @@ const AboutUs = () => {
       <h2 className={`${SpaceGroteskBold.className} text-4xl font-bold mb-12`}>
         About Us
       </h2>
-      <div className='border-[#373737] border p-14 lg:p-20 rounded-lg shadow-lg max-w-4xl mx-auto text-[#AEAEAE]'>
+      <div className='border-[#373737] border p-5 sm:p-14 lg:p-20 rounded-lg shadow-lg max-w-4xl mx-auto text-[#AEAEAE]'>
         <p className='text-lg'>
           At <strong>Mx Technologies</strong>, we are passionate about
           delivering high-performance, scalable software solutions that

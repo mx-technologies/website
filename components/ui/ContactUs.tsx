@@ -39,10 +39,10 @@ const ContactUs = () => {
       <p className='text-lg text-[#AEAEAE] mb-4'>
         Send us a mail to{' '}
         <a
-          href='mailto:info@mxtechnology.com'
+          href='mailto:hello@mxtechsolutions.com'
           className='text-white font-semibold'
         >
-          info@mxtechnologies.com
+          hello@mxtechsolutions.com
         </a>
       </p>
 
