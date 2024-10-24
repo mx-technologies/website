@@ -55,7 +55,7 @@ const ContactUs = () => {
 
       {/* <!-- WhatsApp Button --> */}
       <a
-        href='https://wa.me/yourwhatsapplink'
+        href='https://wa.me/+2347072182999'
         className={`${SpaceGrotesk.className} mx-green-gradient text-white py-4 px-6 rounded-lg shadow-lg hover:bg-green-500 border-[#94CEA5] border`}
       >
         Let&apos;s WhatsApp
