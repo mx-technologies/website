@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 import './globals.css';
 import { ThemeProvider } from './provider';
@@ -29,6 +30,7 @@ export default function RootLayout({
         <link rel='icon' href='/logo.png' sizes='any' />
       </head>
       <body className={roboto.className}>
+        <GoogleAnalytics gaId='G-Q84XGSVJ30' />
         <ThemeProvider
           attribute='class'
           defaultTheme='dark'
