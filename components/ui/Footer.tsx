@@ -9,19 +9,19 @@ const Footer = () => {
         <div className='flex space-x-4'>
           {/* <!-- Replace # with actual social media links --> */}
           <a
-            href='#'
+            href='https://x.com/@mxtechhq'
             className='bg-gray-700 rounded-full p-3 hover:bg-gray-600 transition'
           >
             <img src='/icons/x.svg' className='w-5' alt='X' />
           </a>
           <a
-            href='#'
+            href='https://instagram.com/mxtechhq'
             className='bg-gray-700 rounded-full p-3 hover:bg-gray-600 transition'
           >
             <img src='/icons/IG.svg' className='w-5' alt='IG' />
           </a>
           <a
-            href='#'
+            href='https://facebook.com/mxtechhq'
             className='bg-gray-700 rounded-full p-3 hover:bg-gray-600 transition'
           >
             <img src='/icons/facebook.svg' className='w-5' alt='facebook' />

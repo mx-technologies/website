@@ -226,7 +226,7 @@ const CarouselPrevious = React.forwardRef<
           stroke-width='2'
         >
           <path
-            stroke-linecap='round'
+            strokeLinecap='round'
             stroke-linejoin='round'
             d='M15 19l-7-7 7-7'
           />
@@ -269,7 +269,7 @@ const CarouselNext = React.forwardRef<
         stroke='currentColor'
         stroke-width='2'
       >
-        <path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7' />
+        <path strokeLinecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7' />
       </svg>
       <span className='sr-only'>Next slide</span>
     </Button>
