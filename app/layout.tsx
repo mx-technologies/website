@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <head>
-        <link rel='icon' href='/logo.png' sizes='any' />
+        <link rel='icon' href='/icons/logo.png' sizes='any' />
       </head>
       <body className={roboto.className}>
         <GoogleAnalytics gaId='G-Q84XGSVJ30' />
