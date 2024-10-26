@@ -1,7 +1,12 @@
+'use client';
+
 import { SpaceGroteskBold } from '@/lib/utils';
 import React from 'react';
 
 const Works = () => {
+  const workPage = (page: string) => {
+    (window as any).location = page;
+  };
   return (
     <section id='works' className='container mx-auto p-8'>
       {/* <!-- Title --> */}
@@ -31,6 +36,7 @@ const Works = () => {
           </p>
 
           <button
+            onClick={() => workPage('https://mywishlistng.com')}
             className={`${SpaceGroteskBold.className} px-6 py-3 bg-gradient-to-r from-[#0F34ED] to-pink-500 text-white font-bold  w-[100%] gradient-border rounded-lg`}
           >
             Check me out!
@@ -54,6 +60,7 @@ const Works = () => {
             without being encumbered by time and distance.
           </p>
           <button
+            onClick={() => workPage('https://buildonthego.com')}
             className={`${SpaceGroteskBold.className} px-6 py-3 bg-gradient-to-r from-[#0F34ED] to-pink-500 text-white font-bold  w-[100%] gradient-border rounded-lg`}
           >
             Check me out!
@@ -77,6 +84,7 @@ const Works = () => {
             travel, community engagement, and exclusive sports content.
           </p>
           <button
+            onClick={() => workPage('https://fantrip.app')}
             className={`${SpaceGroteskBold.className} px-6 py-3 bg-gradient-to-r from-[#0F34ED] to-pink-500 text-white font-bold  w-[100%] gradient-border rounded-lg`}
           >
             Check me out!

@@ -1,9 +1,10 @@
 import { SpaceGroteskBold } from '@/lib/utils';
 import React from 'react';
+import { FaLinkedin } from 'react-icons/fa6';
 
 const Team = () => {
   return (
-    <section id='meet' className='bg-black text-white py-16'>
+    <section id='the-team' className='bg-black text-white py-16'>
       <h2
         className={`${SpaceGroteskBold.className} text-center text-4xl font-bold mb-6`}
       >
@@ -28,14 +29,20 @@ const Team = () => {
                 Co-founder & CEO | Software Engineer | Project Manager
               </p>
               <div className='flex justify-center md:justify-start space-x-4 mt-4'>
-                <button className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'>
+                <a
+                  href='https://x.com/@manuelextra_'
+                  className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'
+                >
                   <img src={'/icons/x.svg'} alt='x' />
                   {/* <!-- Twitter Icon --> */}
-                </button>
-                <button className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'>
-                  <img src={'/icons/facebook.svg'} alt='facebook' />
+                </a>
+                <a
+                  href='https://linkedin.com/in/manuelextra'
+                  className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'
+                >
+                  <FaLinkedin className='text-[#AEAEAE] text-xs' />
                   {/* <!-- Facebook Icon --> */}
-                </button>
+                </a>
               </div>
             </div>
 
@@ -55,14 +62,20 @@ const Team = () => {
                 Co-founder | COO | Backend Developer
               </p>
               <div className='flex justify-center md:justify-start space-x-4 mt-4'>
-                <button className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'>
+                <a
+                  href='https://x.com/sod_maq'
+                  className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'
+                >
                   <img src={'/icons/x.svg'} alt='x' />
                   {/* <!-- Twitter Icon --> */}
-                </button>
-                <button className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'>
-                  <img src={'/icons/facebook.svg'} alt='facebook' />
+                </a>
+                <a
+                  href='https://www.linkedin.com/in/sodiq-yekini-222aa7196/'
+                  className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'
+                >
+                  <FaLinkedin className='text-[#AEAEAE] text-xs' />
                   {/* <!-- Facebook Icon --> */}
-                </button>
+                </a>
               </div>
             </div>
 
@@ -80,14 +93,20 @@ const Team = () => {
               </h2>
               <p className=' text-gray-600'>UI / Brand Designer</p>
               <div className='flex justify-center md:justify-start space-x-4 mt-4'>
-                <button className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'>
+                <a
+                  href=''
+                  className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'
+                >
                   <img src={'/icons/x.svg'} alt='x' />
                   {/* <!-- Twitter Icon --> */}
-                </button>
-                <button className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'>
-                  <img src={'/icons/facebook.svg'} alt='facebook' />
+                </a>
+                <a
+                  href=''
+                  className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'
+                >
+                  <FaLinkedin className='text-[#AEAEAE] text-xs' />
                   {/* <!-- Facebook Icon --> */}
-                </button>
+                </a>
               </div>
             </div>
           </div>
