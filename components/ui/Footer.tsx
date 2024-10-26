@@ -15,13 +15,13 @@ const Footer = () => {
             <img src='/icons/x.svg' className='w-5' alt='X' />
           </a>
           <a
-            href='https://instagram.com/mxtechhq'
+            href='https://instagram.com/mxtechnologieshq'
             className='bg-gray-700 rounded-full p-3 hover:bg-gray-600 transition'
           >
             <img src='/icons/IG.svg' className='w-5' alt='IG' />
           </a>
           <a
-            href='https://facebook.com/mxtechhq'
+            href='https://web.facebook.com/profile.php?id=61567463106427'
             className='bg-gray-700 rounded-full p-3 hover:bg-gray-600 transition'
           >
             <img src='/icons/facebook.svg' className='w-5' alt='facebook' />
