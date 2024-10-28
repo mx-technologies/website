@@ -2,13 +2,7 @@
 
 import { Drawer, Sidebar } from 'flowbite-react';
 import { useState } from 'react';
-import {
-  HiChartPie,
-  HiLogin,
-  HiPencil,
-  HiShoppingBag,
-  HiUsers,
-} from 'react-icons/hi';
+
 import { AiFillHome, AiOutlineInfoCircle, AiOutlineMail } from 'react-icons/ai';
 import { FaFolderOpen, FaServicestack, FaUsers } from 'react-icons/fa';
 import { FaCogs } from 'react-icons/fa';
