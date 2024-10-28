@@ -6,7 +6,7 @@ import React from 'react';
 const Works = () => {
   const workPage = (page: string) => {
     if (typeof window !== 'undefined') {
-      window.location = page;
+      window.location.href = page;
     }
   };
 
