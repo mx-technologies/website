@@ -12,8 +12,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: 'Mx technologies',
-  description: 'Welcome to Mx technologies. Where innovation meets precision.',
+  title: 'MX tech solutions',
+  description:
+    'Welcome to Mx tech solutions. Where innovation meets precision.',
   icons: {
     icon: '/icons/logo.png',
   },

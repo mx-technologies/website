@@ -50,7 +50,7 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words='Welcome to Mx Technologies,'
+            words='Welcome to MX Tech Solutions,'
             className={`${SpaceGrotesk.className} text-center text-[40px] md:text-5xl lg:text-6xl`}
           />
           <TextGenerateEffect
