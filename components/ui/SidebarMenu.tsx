@@ -9,6 +9,9 @@ import {
   HiShoppingBag,
   HiUsers,
 } from 'react-icons/hi';
+import { AiFillHome, AiOutlineInfoCircle, AiOutlineMail } from 'react-icons/ai';
+import { FaFolderOpen, FaServicestack, FaUsers } from 'react-icons/fa';
+import { FaCogs } from 'react-icons/fa';
 
 const SidebarMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,49 +59,49 @@ const SidebarMenu = () => {
                   <Sidebar.ItemGroup>
                     <Sidebar.Item
                       href='#'
-                      icon={HiChartPie}
+                      icon={AiFillHome}
                       onClick={() => setIsOpen(false)}
                     >
                       Home
                     </Sidebar.Item>
                     <Sidebar.Item
                       href='#services'
-                      icon={HiShoppingBag}
+                      icon={FaServicestack}
                       onClick={() => setIsOpen(false)}
                     >
                       Services
                     </Sidebar.Item>
                     <Sidebar.Item
                       href='#tech-stack'
-                      icon={HiUsers}
+                      icon={FaCogs}
                       onClick={() => setIsOpen(false)}
                     >
                       Tech Stack
                     </Sidebar.Item>
                     <Sidebar.Item
                       href='#the-team'
-                      icon={HiLogin}
+                      icon={FaUsers}
                       onClick={() => setIsOpen(false)}
                     >
                       The team
                     </Sidebar.Item>
                     <Sidebar.Item
                       href='#works'
-                      icon={HiPencil}
+                      icon={FaFolderOpen}
                       onClick={() => setIsOpen(false)}
                     >
                       Works
                     </Sidebar.Item>
                     <Sidebar.Item
                       href='#about-us'
-                      icon={HiPencil}
+                      icon={AiOutlineInfoCircle}
                       onClick={() => setIsOpen(false)}
                     >
                       About Us
                     </Sidebar.Item>
                     <Sidebar.Item
                       href='#contact-us'
-                      icon={HiPencil}
+                      icon={AiOutlineMail}
                       onClick={() => setIsOpen(false)}
                     >
                       Contact Us
