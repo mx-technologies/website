@@ -94,18 +94,11 @@ const Team = () => {
               <p className=' text-gray-600'>UI / Brand Designer</p>
               <div className='flex justify-center md:justify-start space-x-4 mt-4'>
                 <a
-                  href=''
+                  href='https://x.com/Benyadex1/'
                   className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'
                 >
                   <img src={'/icons/x.svg'} alt='x' />
                   {/* <!-- Twitter Icon --> */}
-                </a>
-                <a
-                  href=''
-                  className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'
-                >
-                  <FaLinkedin className='text-[#AEAEAE] text-xs' />
-                  {/* <!-- Facebook Icon --> */}
                 </a>
               </div>
             </div>

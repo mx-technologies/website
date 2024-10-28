@@ -5,8 +5,11 @@ import React from 'react';
 
 const Works = () => {
   const workPage = (page: string) => {
-    (window as any).location = page;
+    if (typeof window !== 'undefined') {
+      window.location = page;
+    }
   };
+
   return (
     <section id='works' className='container mx-auto p-8'>
       {/* <!-- Title --> */}
