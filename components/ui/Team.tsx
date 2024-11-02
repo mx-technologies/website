@@ -26,7 +26,7 @@ const Team = () => {
                 Emmanuel Olaleye
               </h2>
               <p className=' text-gray-600 '>
-                Co-founder & CEO | Software Engineer | Project Manager
+                Software Engineer | Project Manager
               </p>
               <div className='flex justify-center md:justify-start space-x-4 mt-4'>
                 <a
@@ -58,9 +58,7 @@ const Team = () => {
               >
                 Sodiq Yekini
               </h2>
-              <p className=' text-gray-600'>
-                Co-founder | COO | Backend Developer
-              </p>
+              <p className=' text-gray-600'>Backend Developer</p>
               <div className='flex justify-center md:justify-start space-x-4 mt-4'>
                 <a
                   href='https://x.com/sod_maq'
