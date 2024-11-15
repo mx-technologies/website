@@ -4,7 +4,7 @@ import { FaLinkedin } from 'react-icons/fa6';
 
 const Team = () => {
   return (
-    <section id='the-team' className='container bg-black text-white py-16'>
+    <section id='the-team' className='bg-black text-white py-16'>
       <h2
         className={`${SpaceGroteskBold.className} text-center text-4xl font-bold mb-6`}
       >

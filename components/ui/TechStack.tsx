@@ -15,7 +15,7 @@ const TechStack = () => {
           <span
             className={`${SpaceGroteskBold.className} font-bold text-gray-300`}
           >
-            Mx Technologies,
+            Mx Techsolutions,
           </span>
         </p>
         we leverage an array of powerful industry-standard technologies to build

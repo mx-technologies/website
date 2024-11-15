@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className='container bg-gray-900 py-8'>
+    <footer className='bg-gray-900 py-8'>
       <div className='max-w-[90%] mx-auto px-4 flex flex-col-reverse md:flex-row gap-10 md:gap-0 justify-between items-center'>
         {/* <!-- Social Media Icons --> */}
         <div className='flex space-x-4'>
@@ -50,7 +50,7 @@ const Footer = () => {
       <div
         className={`${SpaceGrotesk.className} mt-8 text-center text-gray-500`}
       >
-        <p>Copyright 2024 @mxtechnologies. All rights reserved!</p>
+        <p>Copyright 2024 @mxtechsolutions. All rights reserved!</p>
       </div>
     </footer>
   );

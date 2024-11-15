@@ -5,7 +5,7 @@ import React from 'react';
 const WhyChooseUs = () => {
   return (
     <>
-      <div className='container text-center py-20 bg-[#0F34ED] flex flex-col justify-center items-center border gap-16'>
+      <div className='text-center py-20 bg-[#0F34ED] flex flex-col justify-center items-center border gap-16 p-2'>
         <h2
           className={`text-4xl text-white wcu-title mb-8 ${SpaceGroteskBold.className}`}
         >
