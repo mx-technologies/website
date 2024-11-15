@@ -62,7 +62,7 @@ const Nav = ({
           // change rounded-full to rounded-lg
           // remove dark:border-white/[0.2] dark:bg-black bg-white border-transparent
           // change  pr-2 pl-8 py-2 to px-10 py-5
-          'fixed z-[5000] py-4  top-0 xl:top-10 inset-x-0 rounded-lg  border-black/.1',
+          'fixed z-[5000] py-10  top-0 xl:top-10 inset-x-0 rounded-lg  border-black/.1',
           className
         )}
         style={
@@ -74,7 +74,7 @@ const Nav = ({
           }
         }
       >
-        <div className='p-2'>
+        <div className='container'>
           <nav>
             <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto'>
               <a

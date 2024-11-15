@@ -51,16 +51,16 @@ const Hero = () => {
            */}
           <TextGenerateEffect
             words='Welcome to MX Tech Solutions,'
-            className={`${SpaceGrotesk.className} text-center text-[40px] md:text-5xl lg:text-6xl`}
+            className={`${SpaceGrotesk.className} text-center py-2 text-[30px] md:text-5xl lg:text-6xl`}
           />
           <TextGenerateEffect
             words='where innovation meets precision'
-            className={`${SpaceGrotesk.className} text-center text-[30px] md:text-2xl lg:text-3xl`}
+            className={`${SpaceGrotesk.className} text-center text-[20px] md:text-2xl lg:text-3xl`}
           />
           <TextGenerateEffect
             words='We specialize in creating scalable, reliable, and efficient software
             solutions tailored to meet your business needs.'
-            className={`${SpaceGrotesk.className} text-center mt-8 text-[20px] w-[70%]`}
+            className={`${SpaceGrotesk.className} text-center mt-8 text-[20px] w-full md:w-[70%]`}
           />
 
           <div className='mt-10'>

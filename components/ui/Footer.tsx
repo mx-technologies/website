@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className='bg-gray-900 py-8'>
+    <footer className='container bg-gray-900 py-8'>
       <div className='max-w-[90%] mx-auto px-4 flex flex-col-reverse md:flex-row gap-10 md:gap-0 justify-between items-center'>
         {/* <!-- Social Media Icons --> */}
         <div className='flex space-x-4'>
