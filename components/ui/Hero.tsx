@@ -66,7 +66,7 @@ const Hero = () => {
           <div className='mt-10'>
             <ButtonGenerateEffect
               el={
-                <a href='#about' className='mt-20'>
+                <a href='#about-us' className='mt-20'>
                   <MagicButton title='Get started!' position='right' />
                 </a>
               }
