@@ -82,7 +82,7 @@ const Team = () => {
               <img
                 src='/images/BGraphics.png'
                 alt='Bgraphics'
-                className='rounded-lg border border-gray-800 mb-4 lg:h-[46vh] object-cover w-[50%] mx-auto md:w-full'
+                className='rounded-lg mb-4 w-[50%] lg:h-[75%] xl:h-[80%] border object-cover mx-auto md:w-full'
               />
               <h2
                 className={`${SpaceGroteskBold.className} text-xl font-bold `}
