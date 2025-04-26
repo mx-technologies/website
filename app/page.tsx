@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main>
       <div className='relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 xl:h-[100vh]'>
-        <div className='max-w-7xl w-full'>
+        <div className='md:max-w-7xl w-full '>
           <Nav navItems={navItems} />
           <Hero />
         </div>
@@ -23,7 +23,7 @@ export default function Home() {
       <WhyChooseUs />
       <Services />
       <TechStack />
-      <Team />
+      {/* <Team /> */}
       <Works />
       {/* <Testimonials /> */}
       <AboutUs />

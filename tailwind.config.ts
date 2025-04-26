@@ -40,6 +40,9 @@ const config = {
           '200': '#C1C2D3',
           DEFAULT: '#FFF',
         },
+        gray: {
+          1: '#838383',
+        },
         blue: {
           '100': '#E4ECFF',
         },
@@ -91,6 +94,10 @@ const config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       keyframes: {
+        fadeInSlow: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
         'accordion-down': {
           from: {
             height: '0',
@@ -176,6 +183,7 @@ const config = {
         fifth: 'moveInCircle 20s ease infinite',
         scroll:
           'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
+        fadeInSlow: 'fadeInSlow 1s ease forwards',
       },
       clipPath: {
         'custom-polygon': 'polygon(0 20%, 100% 0, 100% 80%, 0 100%)',
