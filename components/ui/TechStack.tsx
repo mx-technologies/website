@@ -3,7 +3,10 @@ import React from 'react';
 
 const TechStack = () => {
   return (
-    <section id='tech-stack' className='container mx-auto py-16 text-center'>
+    <section
+      id='tech-stack'
+      className='container mx-auto py-16 text-center h-[100vh]'
+    >
       <h2 className={`${SpaceGroteskBold.className} text-4xl font-bold mb-6`}>
         Technology Stack
       </h2>
@@ -15,7 +18,7 @@ const TechStack = () => {
           <span
             className={`${SpaceGroteskBold.className} font-bold text-gray-300`}
           >
-            Mx Techsolutions,
+            MX Tech Solutions,
           </span>
         </p>
         we leverage an array of powerful industry-standard technologies to build

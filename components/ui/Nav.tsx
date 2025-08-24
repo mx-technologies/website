@@ -10,6 +10,8 @@ import {
 import Image from 'next/image';
 import React, { useState } from 'react';
 import SidebarMenu from './SidebarMenu';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Nav = ({
   className,
@@ -21,6 +23,8 @@ const Nav = ({
   }[];
   className?: string;
 }) => {
+  const pathname = usePathname();
+
   const { scrollYProgress } = useScroll();
 
   // set true for the initial state so that nav bar is visible in the hero section
@@ -62,7 +66,7 @@ const Nav = ({
           // change rounded-full to rounded-lg
           // remove dark:border-white/[0.2] dark:bg-black bg-white border-transparent
           // change  pr-2 pl-8 py-2 to px-10 py-5
-          'fixed z-[5000] py-10  top-0 xl:top-10 inset-x-0 rounded-lg  border-black/.1',
+          'fixed z-[5000] py-10 top-0 xl:top-10 inset-x-0 rounded-lg border-black/.1',
           className
         )}
         style={
@@ -91,66 +95,113 @@ const Nav = ({
 
               <SidebarMenu />
               <div
-                className='hidden w-full md:block md:w-auto'
+                className='hidden w-full lg:block md:w-auto'
                 id='navbar-default'
               >
-                <ul className='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 '>
-                  <li className=''>
-                    <a
-                      href='#'
-                      className='block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500'
-                      aria-current='page'
+                <ul className='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-transparent md:dark:bg-transparent dark:border-gray-700 '>
+                  <li>
+                    <Link
+                      href='/'
+                      className={cn(
+                        'block py-2 px-3 rounded md:p-0',
+                        pathname === '/'
+                          ? 'text-white font-black md:text-white'
+                          : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-400 dark:text-gray-400 md:dark:hover:text-gray-400'
+                      )}
                     >
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href='#services'
-                      className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                    <Link
+                      href='/services'
+                      className={cn(
+                        'block py-2 px-3 rounded md:p-0',
+                        pathname === '/services'
+                          ? 'text-white font-black md:text-white'
+                          : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-400 dark:text-gray-400 md:dark:hover:text-gray-400'
+                      )}
                     >
                       Services
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href='#tech-stack'
-                      className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                    <Link
+                      href='/portfolio'
+                      className={cn(
+                        'block py-2 px-3 rounded md:p-0',
+                        pathname === '/portfolio'
+                          ? 'text-white font-black md:text-white'
+                          : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-400 dark:text-gray-400 md:dark:hover:text-gray-400'
+                      )}
                     >
-                      Tech Stack
-                    </a>
+                      Portfolio
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href='#the-team'
-                      className='block py-2 px-3 text-gray-900 rounded hovteer:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                    <Link
+                      href='/careers'
+                      className={cn(
+                        'block py-2 px-3 rounded md:p-0',
+                        pathname === '/careers'
+                          ? 'text-white font-black md:text-white'
+                          : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-400 dark:text-gray-400 md:dark:hover:text-gray-400'
+                      )}
                     >
-                      The Team
-                    </a>
+                      Careers
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href='#works'
-                      className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                    <Link
+                      href='/blog'
+                      className={cn(
+                        'block py-2 px-3 rounded md:p-0',
+                        pathname === '/blog'
+                          ? 'text-white font-black md:text-white'
+                          : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-400 dark:text-gray-400 md:dark:hover:text-gray-400'
+                      )}
                     >
-                      Works
-                    </a>
+                      Blog
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href='#about-us'
-                      className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                    <Link
+                      href='/about-us'
+                      className={cn(
+                        'block py-2 px-3 rounded md:p-0',
+                        pathname === '/about-us'
+                          ? 'text-white font-black md:text-white'
+                          : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-400 dark:text-gray-400 md:dark:hover:text-gray-400'
+                      )}
                     >
                       About Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href='#contact-us'
-                      className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                    <Link
+                      href='/contact-us'
+                      className={cn(
+                        'block py-2 px-3 rounded md:p-0',
+                        pathname === '/contact-us'
+                          ? 'text-white font-black md:text-white'
+                          : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-400 dark:text-gray-400 md:dark:hover:text-gray-400'
+                      )}
                     >
                       Contact Us
-                    </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href='/pricing'
+                      className={cn(
+                        'block py-2 px-3 rounded md:p-0',
+                        pathname === '/pricing'
+                          ? 'text-white font-black md:text-white'
+                          : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-400 dark:text-gray-400 md:dark:hover:text-gray-400'
+                      )}
+                    >
+                      Pricing
+                    </Link>
                   </li>
                 </ul>
               </div>

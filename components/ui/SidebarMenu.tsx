@@ -18,7 +18,7 @@ const SidebarMenu = () => {
         onClick={() => setIsOpen(true)}
         data-collapse-toggle='navbar-default'
         type='button'
-        className='text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+        className='text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
         aria-controls='navbar-default'
         aria-expanded='false'
       >
@@ -52,14 +52,14 @@ const SidebarMenu = () => {
                 <Sidebar.Items>
                   <Sidebar.ItemGroup>
                     <Sidebar.Item
-                      href='#'
+                      href='/'
                       icon={AiFillHome}
                       onClick={() => setIsOpen(false)}
                     >
                       Home
                     </Sidebar.Item>
                     <Sidebar.Item
-                      href='#services'
+                      href='/services'
                       icon={FaServicestack}
                       onClick={() => setIsOpen(false)}
                     >

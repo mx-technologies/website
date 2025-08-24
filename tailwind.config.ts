@@ -42,6 +42,7 @@ const config = {
         },
         gray: {
           1: '#838383',
+          2: '#AEAEAE',
         },
         blue: {
           '100': '#E4ECFF',
