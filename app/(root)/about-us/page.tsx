@@ -1,6 +1,4 @@
-import WhyChooseUs from '@/components/ui/WhyChooseUs';
-import { SpaceGrotesk, SpaceGroteskBold } from '@/lib/utils';
-import Image from 'next/image';
+import { SpaceGroteskBold } from '@/lib/utils';
 import React from 'react';
 
 const AboutUs = () => {
