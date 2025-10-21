@@ -5,7 +5,7 @@ const ContactUs = () => {
   return (
     <section
       id='contact-us'
-      className='flex flex-col justify-center items-center max-w-[46rem] text-center h-[80vh] mx-auto mb-20 p-2'
+      className='flex flex-col justify-center items-center max-w-[46rem] text-center h-[50vh] mx-auto mb-20 p-2'
     >
       {/* <!-- Heading --> */}
       <h2 className={`${SpaceGroteskBold.className} text-4xl font-bold mb-10`}>

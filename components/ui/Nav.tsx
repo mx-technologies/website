@@ -114,7 +114,7 @@ const Nav = ({
                   </li>
                   <li>
                     <Link
-                      href='/services'
+                      href='#services'
                       className={cn(
                         'block py-2 px-3 rounded md:p-0',
                         pathname === '/services'
@@ -127,7 +127,7 @@ const Nav = ({
                   </li>
                   <li>
                     <Link
-                      href='/portfolio'
+                      href='#works'
                       className={cn(
                         'block py-2 px-3 rounded md:p-0',
                         pathname === '/portfolio'
@@ -138,7 +138,7 @@ const Nav = ({
                       Portfolio
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href='/careers'
                       className={cn(
@@ -150,8 +150,8 @@ const Nav = ({
                     >
                       Careers
                     </Link>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <Link
                       href='/blog'
                       className={cn(
@@ -163,10 +163,10 @@ const Nav = ({
                     >
                       Blog
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
-                      href='/about-us'
+                      href='#about-us'
                       className={cn(
                         'block py-2 px-3 rounded md:p-0',
                         pathname === '/about-us'
@@ -179,7 +179,7 @@ const Nav = ({
                   </li>
                   <li>
                     <Link
-                      href='/contact-us'
+                      href='#contact-us'
                       className={cn(
                         'block py-2 px-3 rounded md:p-0',
                         pathname === '/contact-us'
@@ -190,7 +190,7 @@ const Nav = ({
                       Contact Us
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href='/pricing'
                       className={cn(
@@ -202,7 +202,7 @@ const Nav = ({
                     >
                       Pricing
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

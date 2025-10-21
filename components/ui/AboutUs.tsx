@@ -5,14 +5,14 @@ const AboutUs = () => {
   return (
     <section
       id='about-us'
-      className='flex flex-col justify-center text-center h-[100vh] p-2'
+      className='flex flex-col justify-center text-center md:h-[50vh] p-2'
     >
       <h2 className={`${SpaceGroteskBold.className} text-4xl font-bold mb-12`}>
         About Us
       </h2>
       <div className='border-[#373737] border p-5 sm:p-14 lg:p-20 rounded-lg shadow-lg max-w-4xl mx-auto text-[#AEAEAE]'>
         <p className='text-lg'>
-          At <strong>Mx Techsolutions</strong>, we are passionate about
+          At <strong>MX Tech Solutions</strong>, we are passionate about
           delivering high-performance, scalable software solutions that
           transform businesses. Our team consists of experts in backend
           development, frontend development, cloud services, and ensuring that

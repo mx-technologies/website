@@ -11,7 +11,7 @@ const Works = () => {
   };
 
   return (
-    <section id='works' className='container mx-auto p-8'>
+    <section id='works' className='container mx-auto p-8 py-16'>
       {/* <!-- Title --> */}
       <h2
         className={`${SpaceGroteskBold.className} text-center text-4xl font-bold mb-12`}
@@ -21,7 +21,7 @@ const Works = () => {
 
       {/* Container */}
       <div className='flex justify-center'>
-        <div className='flex gap-8 max-w-5xl w-full'>
+        <div className='flex flex-col md:flex-row gap-8 max-w-5xl w-full'>
           {/* Card 1 */}
           <div className='flex-1 p-6 rounded-lg text-center'>
             <img
