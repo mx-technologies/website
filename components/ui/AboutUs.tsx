@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <section
       id='about-us'
-      className='flex flex-col justify-center text-center md:h-[50vh] p-2'
+      className='flex flex-col justify-center text-center py-16 p-2'
     >
       <h2 className={`${SpaceGroteskBold.className} text-4xl font-bold mb-12`}>
         About Us
