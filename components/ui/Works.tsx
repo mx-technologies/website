@@ -32,7 +32,7 @@ const Works = () => {
             <h2
               className={`${SpaceGroteskBold.className} text-left text-xl font-bold mb-4`}
             >
-              Doexcess - An autopilot for business' processes
+              Doexcess - An autopilot for business&apos; processes
             </h2>
             <p className='text-left text-gray-400 mb-6'>
               Doexcess is an all-in-one platform that helps individuals, teams,
