@@ -57,13 +57,13 @@ const Works = () => {
             <h2
               className={`${SpaceGroteskBold.className} text-left text-xl font-bold mb-4`}
             >
-              Christ’s Victorious Army — A Believers’ Community
+              Christ&apos;s Victorious Army — A Believers&apos; Community
             </h2>
             <p className='text-left text-gray-400 mb-6'>
-              Christ’s Victorious Army is a word-based, full-gospel Christian
-              ministry—interdenominational and non-denominational—committed to
-              honoring God and helping believers grow spiritually and live in
-              wholehearted service to Him.
+              Christ&apos;s Victorious Army is a word-based, full-gospel
+              Christian ministry—interdenominational and
+              non-denominational—committed to honoring God and helping believers
+              grow spiritually and live in wholehearted service to Him.
             </p>
             <button
               onClick={() => workPage('https://christsvictoriousarmy.org')}
