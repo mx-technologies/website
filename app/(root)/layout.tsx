@@ -1,5 +1,6 @@
 'use client';
 
+import Footer from '@/components/ui/Footer';
 import Hero from '@/components/ui/Hero';
 import Nav from '@/components/ui/Nav';
 import { navItems } from '@/data';
@@ -29,6 +30,7 @@ const RootLayout = ({
         </div>
       </div>
       {children}
+      <Footer />
     </main>
   );
 };

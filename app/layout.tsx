@@ -28,6 +28,10 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <head>
+        <meta
+          name='google-site-verification'
+          content={process.env.NEXT_PUBLIC_SITE_KEY}
+        />
         <link rel='icon' href='/icons/logo.png' sizes='any' />
       </head>
       <body className={roboto.className}>
