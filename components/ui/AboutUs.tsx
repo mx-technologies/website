@@ -19,9 +19,10 @@ const AboutUs = () => {
           every project we undertake meets the highest standards of quality.
         </p>
         <p className='text-lg mt-4'>
-          With a strong focus on innovation and efficiency, we help companies
+          Through our flagship products like <strong>Doexcess</strong> and our custom consulting services, we help companies
           automate processes, scale their infrastructure, and create new revenue
-          streams through custom-built software.
+          streams through high-performance software. We are dedicated to providing 
+          transparent and secure technology that you can trust.
         </p>
       </div>
     </section>

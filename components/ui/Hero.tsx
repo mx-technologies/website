@@ -62,8 +62,8 @@ const Hero = () => {
             className={`${SpaceGrotesk.className} text-center text-[20px] md:text-2xl lg:text-3xl`}
           />
           <TextGenerateEffect
-            words='We specialize in creating scalable, reliable, and efficient software
-            solutions tailored to meet your business needs.'
+            words='We are MX Tech Solutions, specialized in creating scalable, reliable, and efficient software
+            solutions tailored to automate and grow your business.'
             className={`${SpaceGrotesk.className} text-center mt-8 text-[20px] w-full md:w-[70%]`}
           />
 

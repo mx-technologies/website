@@ -62,7 +62,9 @@ const Footer = () => {
       <div
         className={`${SpaceGrotesk.className} mt-4 text-center text-gray-500`}
       >
-        <p>Copyright 2024 © mxtechsolutions. All rights reserved!</p>
+       
+        <p>18, Oke Aro Road, Agbado Station, Lagos, Nigeria</p>
+        <p>Copyright 2024 - 2026 © MX Tech Solutions. All rights reserved!</p>
       </div>
     </footer>
   );

@@ -4,6 +4,7 @@ import Services from '@/components/ui/Services';
 import TechStack from '@/components/ui/TechStack';
 import WhyChooseUs from '@/components/ui/WhyChooseUs';
 import Works from '@/components/ui/Works';
+import DataTransparency from '@/components/ui/DataTransparency';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Works />
       {/* <Testimonials /> */}
       <AboutUs />
+      <DataTransparency />
       <ContactUs />
       {/* <Footer /> */}
     </main>

@@ -39,7 +39,12 @@ const PrivacyPolicy = () => {
         'Our website uses cookies to enhance user experience. You can choose to disable cookies through your browser settings, though this may affect the functionality of certain parts of our site.',
     },
     {
-      title: '8. Changes to This Policy',
+      title: '8. Google API Disclosure',
+      content:
+        'MX Tech Solutions use of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements. We request access to Google Contacts to automate customer management and record-keeping for our users. This data is not shared with third parties or used for any purpose other than providing the requested automation.',
+    },
+    {
+      title: '9. Changes to This Policy',
       content:
         'We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.',
     },
