@@ -1,4 +1,5 @@
 import { SpaceGroteskBold } from '@/lib/utils';
+import Image from 'next/image';
 import React from 'react';
 
 const Services = () => {
@@ -13,10 +14,12 @@ const Services = () => {
       <div className='grid grid-cols-1 gap-20 max-w-4xl mx-auto'>
         {/* <!-- Service 1 --> */}
         <div className='flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6'>
-          <img
+          <Image
             src='/images/custom-software-dev.png'
             alt='Custom Software Development'
             className='rounded-lg shadow-lg w-[50%] md:w-60 lg:w-96'
+            width={400}
+            height={300}
           />
           <div className='lg:w-[45%] text-center md:text-left'>
             <h3
@@ -38,10 +41,12 @@ const Services = () => {
 
         {/* <!-- Service 2 --> */}
         <div className='flex flex-col md:flex-row-reverse items-center space-y-4 md:space-y-0 gap-2'>
-          <img
+          <Image
             src='/images/api.png'
             alt='API Development & Integration'
             className='rounded-lg shadow-lg w-[50%] md:w-60 lg:w-96'
+            width={400}
+            height={300}
           />
           <div className='lg:w-[50%] mr-auto text-center md:text-left'>
             <h3
@@ -63,10 +68,12 @@ const Services = () => {
 
         {/* <!-- Service 3 --> */}
         <div className='flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6'>
-          <img
+          <Image
             src='/images/web-mobile.png'
             alt='Custom Software Development'
             className='rounded-lg shadow-lg w-[50%] md:w-60 lg:w-96'
+            width={400}
+            height={300}
           />
           <div className='lg:w-[45%] text-center md:text-left'>
             <h3
@@ -88,10 +95,12 @@ const Services = () => {
 
         {/* <!-- Service 4 --> */}
         <div className='flex flex-col md:flex-row-reverse items-center space-y-4 md:space-y-0 gap-2'>
-          <img
+          <Image
             src='/images/cloud.png'
             alt='API Development & Integration'
             className='rounded-lg shadow-lg w-[50%] md:w-60 lg:w-96'
+            width={400}
+            height={300}
           />
           <div className='lg:w-[50%] mr-auto text-center md:text-left'>
             <h3

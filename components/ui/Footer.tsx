@@ -1,6 +1,7 @@
 import { SpaceGrotesk } from '@/lib/utils';
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -12,19 +13,37 @@ const Footer = () => {
             href='https://x.com/@mxtechhq'
             className='bg-gray-700 rounded-full p-3 hover:bg-gray-600 transition'
           >
-            <img src='/icons/x.svg' className='w-5' alt='X' />
+            <Image
+              src='/icons/x.svg'
+              className='w-5'
+              alt='X'
+              width={20}
+              height={20}
+            />
           </a>
           <a
             href='https://instagram.com/mxtechnologieshq'
             className='bg-gray-700 rounded-full p-3 hover:bg-gray-600 transition'
           >
-            <img src='/icons/IG.svg' className='w-5' alt='IG' />
+            <Image
+              src='/icons/IG.svg'
+              className='w-5'
+              alt='IG'
+              width={20}
+              height={20}
+            />
           </a>
           <a
             href='https://web.facebook.com/profile.php?id=61567463106427'
             className='bg-gray-700 rounded-full p-3 hover:bg-gray-600 transition'
           >
-            <img src='/icons/facebook.svg' className='w-5' alt='facebook' />
+            <Image
+              src='/icons/facebook.svg'
+              className='w-5'
+              alt='facebook'
+              width={20}
+              height={20}
+            />
           </a>
         </div>
 

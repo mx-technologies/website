@@ -44,7 +44,7 @@ const Hero = () => {
 
       <div
         className='flex justify-center relative my-20 w-full opacity-0 animate-fadeInSlow'
-        style={{ animationDelay: '2s', animationFillMode: 'forwards' }}
+        style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}
       >
         {/* <div className='' */}
         <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center z-10'>
@@ -82,22 +82,36 @@ const Hero = () => {
             href='https://x.com/@mxtechhq'
             className='bg-white rounded-full p-3 hover:bg-gray-300 transition'
           >
-            <img src='/icons/x.svg' className='w-5 invert' alt='X' />
+            <Image
+              src='/icons/x.svg'
+              className='w-5 invert'
+              alt='X'
+              width={20}
+              height={20}
+            />
           </a>
           <a
             href='https://instagram.com/mxtechnologieshq'
             className='bg-white rounded-full p-3 hover:bg-gray-300 transition'
           >
-            <img src='/icons/IG.svg' className='w-5 invert' alt='IG' />
+            <Image
+              src='/icons/IG.svg'
+              className='w-5 invert'
+              alt='IG'
+              width={20}
+              height={20}
+            />
           </a>
           <a
             href='https://web.facebook.com/profile.php?id=61567463106427'
             className='bg-white rounded-full p-3 hover:bg-gray-300 transition'
           >
-            <img
+            <Image
               src='/icons/facebook.svg'
               className='w-5 invert'
               alt='facebook'
+              width={20}
+              height={20}
             />
           </a>
         </div>
@@ -107,6 +121,7 @@ const Hero = () => {
           alt='network'
           width={800}
           height={300}
+          priority
         />
       </div>
     </div>

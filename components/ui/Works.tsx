@@ -1,6 +1,7 @@
 'use client';
 
 import { SpaceGroteskBold } from '@/lib/utils';
+import Image from 'next/image';
 import React from 'react';
 
 const Works = () => {
@@ -24,10 +25,12 @@ const Works = () => {
         <div className='flex flex-col sm:flex-row gap-8 max-w-5xl w-full'>
           {/* Card 1 */}
           <div className='flex-1 p-6 rounded-lg text-center'>
-            <img
+            <Image
               src='/images/doexcess.png'
               alt='Doexcess Screenshot'
               className='rounded-lg mb-6 w-full h-96 object-contain lg:object-cover object-top'
+              width={500}
+              height={400}
             />
             <h2
               className={`${SpaceGroteskBold.className} text-left text-xl font-bold mb-4`}
@@ -49,10 +52,12 @@ const Works = () => {
 
           {/* Card 2 */}
           <div className='flex-1 p-6 rounded-lg text-center'>
-            <img
+            <Image
               src='/images/cva.png'
               alt='CVA Screenshot'
               className='rounded-lg mb-6 w-full h-96 object-contain lg:object-cover object-top'
+              width={500}
+              height={400}
             />
             <h2
               className={`${SpaceGroteskBold.className} text-left text-xl font-bold mb-4`}

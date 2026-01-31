@@ -18,7 +18,7 @@ export const ButtonGenerateEffect = ({
     const timer = setTimeout(() => {
       // setShowButton(true);
       setIsVisible(true);
-    }, 2000); // 2000 milliseconds = 2 seconds
+    }, 500); // 500 milliseconds = 0.5 seconds
 
     return () => clearTimeout(timer); // Cleanup the timer on unmount
   }, []);
