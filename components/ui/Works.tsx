@@ -51,7 +51,7 @@ const Works = () => {
           </div>
 
           {/* Card 2 */}
-          <div className='flex-1 p-6 rounded-lg text-center'>
+          {/* <div className='flex-1 p-6 rounded-lg text-center'>
             <Image
               src='/images/cva.png'
               alt='CVA Screenshot'
@@ -76,7 +76,7 @@ const Works = () => {
             >
               Check me out!
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
