@@ -22,9 +22,9 @@ const Works = () => {
 
       {/* Container */}
       <div className='flex justify-center'>
-        <div className='flex flex-col sm:flex-row gap-8 max-w-5xl w-full'>
+        <div className='flex flex-col sm:flex-row gap-8 max-w-5xl w-full justify-center'>
           {/* Card 1 */}
-          <div className='flex-1 p-6 rounded-lg text-center'>
+          <div className='flex-1 p-6 rounded-lg text-center max-w-2xl'>
             <Image
               src='/images/doexcess.png'
               alt='Doexcess Screenshot'
