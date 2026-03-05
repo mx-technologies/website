@@ -8,7 +8,7 @@ import { TextGenerateEffect } from './TextGenerateEffect';
 
 const Hero = () => {
   return (
-    <div className='pb-20 pt-20 md:pt-56 w-full'>
+    <div className='pb-16 pt-24 md:pt-32 lg:pt-56 w-full flex flex-col items-center justify-center overflow-hidden'>
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -43,84 +43,58 @@ const Hero = () => {
       </div>
 
       <div
-        className='flex justify-center relative my-20 w-full opacity-0 animate-fadeInSlow'
+        className='flex justify-center relative my-10 md:my-20 w-full animate-fadeInSlow'
         style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}
       >
         {/* <div className='' */}
-        <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center z-10'>
+        <div className='max-w-[92vw] md:max-w-[85vw] lg:max-w-[75vw] flex flex-col items-center justify-center z-10'>
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
            *
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words='Welcome to MX Tech Solutions,'
-            className={`${SpaceGrotesk.className} text-center py-2 text-[30px] md:text-5xl lg:text-6xl`}
+            words='We Build Scalable Software & Automation Systems That Power Growing Businesses'
+            className={`${SpaceGrotesk.className} text-center py-2 text-[32px] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight transition-all duration-300`}
           />
           <TextGenerateEffect
-            words='where innovation meets precision'
-            className={`${SpaceGrotesk.className} text-center text-[20px] md:text-2xl lg:text-3xl`}
-          />
-          <TextGenerateEffect
-            words='We are MX Tech Solutions, specialized in creating scalable, reliable, and efficient software
-            solutions tailored to automate and grow your business.'
-            className={`${SpaceGrotesk.className} text-center mt-8 text-[20px] w-full md:w-[70%]`}
+            words='We help startups, SMEs, and enterprises automate operations, reduce inefficiencies, and build scalable backend systems.'
+            className={`${SpaceGrotesk.className} text-center mt-6 md:mt-8 text-base sm:text-lg md:text-xl lg:text-2xl text-neutral-300 w-full md:w-[90%] lg:w-[80%]`}
           />
 
-          <div className='mt-10'>
+          <div className='mt-10 md:mt-16 flex flex-col sm:flex-row items-center justify-center gap-5 w-full px-6 sm:px-0'>
             <ButtonGenerateEffect
+              className="w-full sm:w-auto"
               el={
-                <a href='#contact-us' className='mt-20'>
-                  <MagicButton title='Get started!' position='right' />
+                <a href='#contact-us' className="w-full sm:w-fit block">
+                  <MagicButton
+                    title='Free Automation Audit'
+                    position='right'
+                    otherClasses='w-full sm:w-fit px-8 text-sm md:text-lg'
+                  />
+                </a>
+              }
+            />
+            <ButtonGenerateEffect
+              className="w-full sm:w-auto"
+              el={
+                <a href='https://calendar.google.com/calendar/u/0/appointments/schedules' target='_blank' className="w-full sm:w-fit block">
+                  <MagicButton
+                    title='Book Strategy Call'
+                    position='right'
+                    otherClasses='w-full sm:w-fit px-8 text-sm md:text-lg bg-transparent border-white/20 hover:bg-white/10'
+                  />
                 </a>
               }
             />
           </div>
         </div>
-        <div className='absolute hidden md:flex flex-col gap-4 right-0 z-10'>
-          <a
-            href='https://x.com/@mxtechhq'
-            className='bg-white rounded-full p-3 hover:bg-gray-300 transition'
-          >
-            <Image
-              src='/icons/x.svg'
-              className='w-5 invert'
-              alt='X'
-              width={20}
-              height={20}
-            />
-          </a>
-          <a
-            href='https://instagram.com/mxtechnologieshq'
-            className='bg-white rounded-full p-3 hover:bg-gray-300 transition'
-          >
-            <Image
-              src='/icons/IG.svg'
-              className='w-5 invert'
-              alt='IG'
-              width={20}
-              height={20}
-            />
-          </a>
-          <a
-            href='https://web.facebook.com/profile.php?id=61567463106427'
-            className='bg-white rounded-full p-3 hover:bg-gray-300 transition'
-          >
-            <Image
-              src='/icons/facebook.svg'
-              className='w-5 invert'
-              alt='facebook'
-              width={20}
-              height={20}
-            />
-          </a>
-        </div>
         <Image
           src={'/images/network.svg'}
-          className='absolute mt-[-20rem] ml-[20rem] md:mt-[-30rem] md:ml-[32rem] bg-transparent'
+          className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20 md:opacity-30 lg:opacity-40 pointer-events-none scale-150 md:scale-100'
           alt='network'
-          width={800}
-          height={300}
+          width={1000}
+          height={400}
           priority
         />
       </div>

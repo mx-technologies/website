@@ -1,18 +1,18 @@
-import AboutUs from '@/components/ui/AboutUs';
 import ContactUs from '@/components/ui/ContactUs';
-import Services from '@/components/ui/Services';
-import TechStack from '@/components/ui/TechStack';
-import WhyChooseUs from '@/components/ui/WhyChooseUs';
+import Pricing from '@/components/ui/Pricing';
+import Problems from '@/components/ui/Problems';
+import Solutions from '@/components/ui/Solutions';
 import Works from '@/components/ui/Works';
+import Process from '@/components/ui/Process';
 
 export default function Home() {
   return (
     <main>
-      <WhyChooseUs />
-      <Services />
-      <TechStack />
+      <Problems />
+      <Solutions />
+      <Process />
       <Works />
-      <AboutUs />
+      <Pricing />
       <ContactUs />
     </main>
   );

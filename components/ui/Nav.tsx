@@ -16,7 +16,7 @@ import { usePathname } from 'next/navigation';
 const Nav = ({
   className,
 }: {
-  navItems: {
+  navItems?: {
     name: string;
     link: string;
     icon?: JSX.Element;
@@ -24,19 +24,56 @@ const Nav = ({
   className?: string;
 }) => {
   const pathname = usePathname();
-
+  const [activeSection, setActiveSection] = useState<string>('');
   const { scrollYProgress } = useScroll();
-
-  // set true for the initial state so that nav bar is visible in the hero section
   const [visible, setVisible] = useState(true);
 
+  // Intersection Observer to detect active sections
+  React.useEffect(() => {
+    if (pathname !== '/') {
+      setActiveSection('');
+      return;
+    }
+
+    const sections = ['services', 'process', 'works', 'contact-us'];
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -70% 0px',
+      threshold: 0,
+    };
+
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(`#${entry.target.id}`);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    sections.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) observer.observe(element);
+    });
+
+    const handleScroll = () => {
+      if (window.scrollY < 100) {
+        setActiveSection('');
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [pathname]);
+
   useMotionValueEvent(scrollYProgress, 'change', (current) => {
-    // Check if current is not undefined and is a number
     if (typeof current === 'number') {
       const direction = current! - scrollYProgress.getPrevious()!;
-
       if (scrollYProgress.get() < 0.05) {
-        // also set true for the initial state
         setVisible(true);
       } else {
         if (direction < 0) {
@@ -47,6 +84,12 @@ const Nav = ({
       }
     }
   });
+
+  const isLinkActive = (item: { name: string; link: string }) => {
+    if (item.link === '/') return pathname === '/' && (activeSection === '' || activeSection === '#');
+    if (item.link.startsWith('#')) return pathname === '/' && activeSection === item.link;
+    return pathname === item.link;
+  };
 
   return (
     <AnimatePresence mode='wait'>
@@ -63,150 +106,82 @@ const Nav = ({
           duration: 0.2,
         }}
         className={cn(
-          // change rounded-full to rounded-lg
-          // remove dark:border-white/[0.2] dark:bg-black bg-white border-transparent
-          // change  pr-2 pl-8 py-2 to px-10 py-5
-          'fixed z-[5000] py-10 top-0 xl:top-10 inset-x-0 rounded-lg border-black/.1',
+          'fixed z-[5000] top-0 left-0 right-0 py-4 px-4 md:px-6 lg:px-8 transition-all duration-300',
           className
         )}
-        style={
-          {
-            // backdropFilter: 'blur(16px) saturate(180%)',
-            // backgroundColor: 'rgba(17, 25, 40, 0.75)',
-            // borderRadius: '12px',
-            // border: '1px solid rgba(255, 255, 255, 0.125)',
-          }
-        }
       >
-        <div className='container'>
-          <nav>
-            <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto'>
-              <a
-                href=''
-                className='flex items-center space-x-3 rtl:space-x-reverse'
-              >
-                <Image
-                  src={'/logo-icon.png'}
-                  alt='Flowbite Logo'
-                  width={90}
-                  height={26}
-                />
-              </a>
+        <div className='max-w-7xl mx-auto'>
+          <div className='relative group'>
+            {/* Glass Background with multi-layered effect */}
+            <div className='absolute inset-0 bg-black/40 backdrop-blur-xl rounded-[24px] border border-white/[0.08] shadow-[0_8px_32px_rgba(0,0,0,0.5)] transition-all duration-500 group-hover:border-white/[0.12]' />
 
-              <SidebarMenu />
-              <div
-                className='hidden w-full lg:block md:w-auto'
-                id='navbar-default'
-              >
-                <ul className='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-transparent md:dark:bg-transparent dark:border-gray-700 '>
-                  <li>
-                    <Link
-                      href='/'
-                      className={cn(
-                        'block py-2 px-3 rounded md:p-0',
-                        pathname === '/'
-                          ? 'text-white font-black md:text-white'
-                          : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-400 dark:text-gray-400 md:dark:hover:text-gray-400'
-                      )}
-                    >
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href='#services'
-                      className={cn(
-                        'block py-2 px-3 rounded md:p-0',
-                        pathname === '/services'
-                          ? 'text-white font-black md:text-white'
-                          : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-400 dark:text-gray-400 md:dark:hover:text-gray-400'
-                      )}
-                    >
-                      Services
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href='#works'
-                      className={cn(
-                        'block py-2 px-3 rounded md:p-0',
-                        pathname === '/portfolio'
-                          ? 'text-white font-black md:text-white'
-                          : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-400 dark:text-gray-400 md:dark:hover:text-gray-400'
-                      )}
-                    >
-                      Portfolio
-                    </Link>
-                  </li>
-                  {/* <li>
-                    <Link
-                      href='/careers'
-                      className={cn(
-                        'block py-2 px-3 rounded md:p-0',
-                        pathname === '/careers'
-                          ? 'text-white font-black md:text-white'
-                          : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-400 dark:text-gray-400 md:dark:hover:text-gray-400'
-                      )}
-                    >
-                      Careers
-                    </Link>
-                  </li> */}
-                  {/* <li>
-                    <Link
-                      href='/blog'
-                      className={cn(
-                        'block py-2 px-3 rounded md:p-0',
-                        pathname === '/blog'
-                          ? 'text-white font-black md:text-white'
-                          : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-400 dark:text-gray-400 md:dark:hover:text-gray-400'
-                      )}
-                    >
-                      Blog
-                    </Link>
-                  </li> */}
-                  <li>
-                    <Link
-                      href='#about-us'
-                      className={cn(
-                        'block py-2 px-3 rounded md:p-0',
-                        pathname === '/about-us'
-                          ? 'text-white font-black md:text-white'
-                          : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-400 dark:text-gray-400 md:dark:hover:text-gray-400'
-                      )}
-                    >
-                      About Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href='#contact-us'
-                      className={cn(
-                        'block py-2 px-3 rounded md:p-0',
-                        pathname === '/contact-us'
-                          ? 'text-white font-black md:text-white'
-                          : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-400 dark:text-gray-400 md:dark:hover:text-gray-400'
-                      )}
-                    >
-                      Contact Us
-                    </Link>
-                  </li>
-                  {/* <li>
-                    <Link
-                      href='/pricing'
-                      className={cn(
-                        'block py-2 px-3 rounded md:p-0',
-                        pathname === '/pricing'
-                          ? 'text-white font-black md:text-white'
-                          : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-400 dark:text-gray-400 md:dark:hover:text-gray-400'
-                      )}
-                    >
-                      Pricing
-                    </Link>
-                  </li> */}
+            <div className='relative px-6 py-3 md:px-8 flex items-center justify-between'>
+              {/* Logo section */}
+              <Link href='/' className='flex items-center gap-3 z-50 group/logo'>
+                <div className='relative w-10 h-10 md:w-12 md:h-12 flex items-center justify-center'>
+                  <Image
+                    src='/logo-icon.png'
+                    alt='MX Tech Logo'
+                    fill
+                    className='object-contain transition-transform duration-500 group-hover/logo:scale-110'
+                  />
+                </div>
+
+              </Link>
+
+              {/* Desktop Nav Links */}
+              <div className='hidden lg:flex items-center px-4 py-2'>
+                <ul className='flex items-center gap-2'>
+                  {[
+                    { name: 'Home', link: '/' },
+                    { name: 'Services', link: '/#services' },
+                    { name: 'Process', link: '/#process' },
+                    { name: 'Works', link: '/#works' },
+                    { name: 'About', link: '/about-us' },
+                  ].map((item) => {
+                    const active = isLinkActive(item);
+                    return (
+                      <li key={item.name}>
+                        <Link
+                          href={item.link}
+                          className={cn(
+                            'px-4 py-2 text-[13px] font-semibold tracking-tight transition-all duration-300 relative group/link',
+                            active ? 'text-white' : 'text-gray-400 hover:text-white'
+                          )}
+                        >
+                          {item.name}
+                          {/* Subtle Underline for active/hover state */}
+                          <span className={cn(
+                            'absolute bottom-0 left-4 right-4 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent transition-all duration-300',
+                            active ? 'opacity-100' : 'opacity-0 group-hover/link:opacity-100'
+                          )} />
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
+
+              {/* CTA & Mobile Menu */}
+              <div className='flex items-center gap-4'>
+                <div className='hidden md:block'>
+                  <Link
+                    href='#contact-us'
+                    className='relative inline-flex h-11 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50'
+                  >
+                    <span className='absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2E8F0_0%,#4A5568_50%,#E2E8F0_100%)]' />
+                    <span className='inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-6 py-1 text-sm font-medium text-white backdrop-blur-3xl transition-all hover:bg-slate-900'>
+                      Get Started
+                    </span>
+                  </Link>
+                </div>
+
+                <div className='lg:hidden'>
+                  <SidebarMenu activeSection={activeSection} />
+                </div>
+              </div>
             </div>
-          </nav>
+          </div>
         </div>
       </motion.div>
     </AnimatePresence>
