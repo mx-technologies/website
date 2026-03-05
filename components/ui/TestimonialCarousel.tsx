@@ -1,5 +1,5 @@
-'use client';
 import * as React from 'react';
+import Image from 'next/image';
 import Autoplay from 'embla-carousel-autoplay';
 
 import {
@@ -27,10 +27,12 @@ const TestimonialCarousel = () => {
           <CarouselItem key={index}>
             <div className='flex flex-col md:flex-row items-center space-x-4 bg-white text-black rounded-lg shadow-lg p-6 max-w-3xl'>
               {/* <!-- Profile Picture --> */}
-              <img
+              <Image
                 className='w-20 h-20 rounded-full object-cover'
                 src='/testimonials/profile1.png'
                 alt='Profile Picture'
+                width={80}
+                height={80}
               />
 
               {/* <!-- Testimonial Text --> */}

@@ -17,12 +17,12 @@ const tiers = [
   {
     name: 'Solopreneur / Early Stage',
     prices: {
-      USD: '1,999',
-      NGN: '3,000,000',
-      CAD: '2,700',
-      GBP: '1,600',
-      GHS: '29,000',
-      ZAR: '38,000',
+      USD: '1,499',
+      NGN: '2,250,000',
+      CAD: '2,000',
+      GBP: '1,200',
+      GHS: '21,500',
+      ZAR: '28,500',
     },
     tagline: 'Ideal for tech partners / founders',
     features: [
@@ -38,12 +38,12 @@ const tiers = [
   {
     name: 'Growth / SME Scaling',
     prices: {
-      USD: '4,999',
-      NGN: '7,500,000',
-      CAD: '6,750',
-      GBP: '3,950',
-      GHS: '72,500',
-      ZAR: '95,000',
+      USD: '3,499',
+      NGN: '5,250,000',
+      CAD: '4,750',
+      GBP: '2,750',
+      GHS: '50,000',
+      ZAR: '65,000',
     },
     tagline: 'Best for growing businesses',
     features: [

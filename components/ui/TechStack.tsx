@@ -1,5 +1,6 @@
-import { SpaceGrotesk, SpaceGroteskBold } from '@/lib/utils';
+import { SpaceGroteskBold } from '@/lib/utils';
 import React from 'react';
+import Image from 'next/image';
 
 const TechStack = () => {
   return (
@@ -8,7 +9,7 @@ const TechStack = () => {
         Technology Stack
       </h2>
       <div
-        className={`${SpaceGrotesk.className} text-xl mb-8 mt-16 mx-gray-color md:max-w-[40%] mx-auto`}
+        className={`text-xl mb-8 mt-16 mx-gray-color md:max-w-[40%] mx-auto`}
       >
         <p className='text-4xl'>
           At{' '}
@@ -24,23 +25,26 @@ const TechStack = () => {
 
       {/* <!-- Technology Icons --> */}
       <div className='flex justify-center space-x-8 mb-12 overflow-auto py-4'>
-        <img src='/icons/node.png' alt='Node.js' className='w-12 h-12' />
-        <img src='/icons/python.png' alt='Python' className='w-12 h-12' />
-        <img src='/icons/react.png' alt='React.js' className='w-12 h-12' />
-        <img src='/icons/html5.png' alt='HTML5' className='w-12 h-12' />
-        <img src='/icons/js.png' alt='JavaScript' className='w-12 h-12' />
-        <img
+        <Image src='/icons/node.png' alt='Node.js' width={48} height={48} />
+        <Image src='/icons/python.png' alt='Python' width={48} height={48} />
+        <Image src='/icons/react.png' alt='React.js' width={48} height={48} />
+        <Image src='/icons/html5.png' alt='HTML5' width={48} height={48} />
+        <Image src='/icons/js.png' alt='JavaScript' width={48} height={48} />
+        <Image
           src='/icons/typescript.png'
           alt='TypeScript'
-          className='w-12 h-12'
+          width={48}
+          height={48}
         />
-        <img src='/icons/sql.png' alt='MySQL' className='w-12 h-12 bg-white' />
-        <img src='/icons/docker.png' alt='Docker' className='w-12 h-12' />
-        <img src='/icons/github.png' alt='GitHub' className='w-12 h-12' />
-        <img
+        <Image src='/icons/sql.png' alt='MySQL' width={48} height={48} className='bg-white' />
+        <Image src='/icons/docker.png' alt='Docker' width={48} height={48} />
+        <Image src='/icons/github.png' alt='GitHub' width={48} height={48} />
+        <Image
           src='/icons/aws.png'
           alt='AWS'
-          className='w-12 h-12 bg-white object-contain rounded-full'
+          width={48}
+          height={48}
+          className='bg-white object-contain rounded-full'
         />
       </div>
 

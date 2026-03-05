@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { SpaceGrotesk, SpaceGroteskBold } from '@/lib/utils';
+import { SpaceGroteskBold } from '@/lib/utils';
 import { Search, PenTool, Code, CheckCircle, Rocket, ArrowDown } from 'lucide-react';
 import Link from 'next/link';
 

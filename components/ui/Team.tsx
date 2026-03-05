@@ -1,5 +1,6 @@
 import { SpaceGroteskBold } from '@/lib/utils';
 import React from 'react';
+import Image from 'next/image';
 import { FaLinkedin } from 'react-icons/fa6';
 
 const Team = () => {
@@ -15,9 +16,11 @@ const Team = () => {
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
             {/* <!-- Team Member 1 --> */}
             <div className='text-black p-6 rounded-lg text-center md:text-left'>
-              <img
+              <Image
                 src='/images/emmanuel.png'
                 alt='Emmanuel Olaleye'
+                width={400}
+                height={400}
                 className='rounded-lg mb-4 w-[50%] mx-auto md:w-full'
               />
               <h2
@@ -33,7 +36,7 @@ const Team = () => {
                   href='https://x.com/@manuelextra_'
                   className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'
                 >
-                  <img src={'/icons/x.svg'} alt='x' />
+                  <Image src={'/icons/x.svg'} alt='x' width={20} height={20} />
                   {/* <!-- Twitter Icon --> */}
                 </a>
                 <a
@@ -48,9 +51,11 @@ const Team = () => {
 
             {/* <!-- Team Member 2 --> */}
             <div className='text-black p-6 rounded-lg text-center md:text-left'>
-              <img
+              <Image
                 src='/images/sodiq.png'
                 alt='Sodiq Yekini'
+                width={400}
+                height={400}
                 className='rounded-lg mb-4 w-[50%] mx-auto md:w-full'
               />
               <h2
@@ -64,7 +69,7 @@ const Team = () => {
                   href='https://x.com/sod_maq'
                   className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'
                 >
-                  <img src={'/icons/x.svg'} alt='x' />
+                  <Image src={'/icons/x.svg'} alt='x' width={20} height={20} />
                   {/* <!-- Twitter Icon --> */}
                 </a>
                 <a
@@ -79,9 +84,11 @@ const Team = () => {
 
             {/* <!-- Team Member 3 --> */}
             <div className='text-black p-6 rounded-lg text-center md:text-left'>
-              <img
+              <Image
                 src='/images/BGraphics.png'
                 alt='Bgraphics'
+                width={400}
+                height={400}
                 className='rounded-lg mb-4 w-[50%] lg:h-[75%] xl:h-[80%] border object-cover mx-auto md:w-full'
               />
               <h2
@@ -95,7 +102,7 @@ const Team = () => {
                   href='https://x.com/Benyadex1/'
                   className='p-2 rounded-full bg-[#373737] hover:bg-[#252525] text-black'
                 >
-                  <img src={'/icons/x.svg'} alt='x' />
+                  <Image src={'/icons/x.svg'} alt='x' width={20} height={20} />
                   {/* <!-- Twitter Icon --> */}
                 </a>
               </div>

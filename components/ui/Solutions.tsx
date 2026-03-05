@@ -1,6 +1,6 @@
 'use client';
-import { SpaceGrotesk, SpaceGroteskBold } from '@/lib/utils';
-import { Database, Workflow, Bot, ChevronRight, ArrowRight } from 'lucide-react';
+import { SpaceGroteskBold } from '@/lib/utils';
+import { Database, Workflow, Bot, ArrowRight } from 'lucide-react';
 import React from 'react';
 
 const pillars = [
@@ -36,7 +36,7 @@ const Solutions = () => {
             Our Core <span className="mx-color">Solutions</span>
           </h2>
           <p className="text-gray-400 text-lg md:text-xl">
-            Modern problems require specialized technical solutions. We've honed our expertise in three critical pillars that support business scaling.
+            Modern problems require specialized technical solutions. We&apos;ve honed our expertise in three critical pillars that support business scaling.
           </p>
         </div>
 

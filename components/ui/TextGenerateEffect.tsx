@@ -25,7 +25,7 @@ export const TextGenerateEffect = ({
         delay: stagger(0.1),
       }
     );
-  }, [scope.current]);
+  }, [animate]);
 
   const renderWords = () => {
     return (
@@ -39,10 +39,9 @@ export const TextGenerateEffect = ({
                 key={word + idx}
                 // change here if idx is greater than 3, change the text color to #CBACF9
                 className={cn(
-                  ` ${
-                    idx >= 2 && idx < 5 && recognizedWords.includes(word)
-                      ? SpaceGroteskBold.className
-                      : ''
+                  ` ${idx >= 2 && idx < 5 && recognizedWords.includes(word)
+                    ? SpaceGroteskBold.className
+                    : ''
                   } opacity-0`
                 )}
               >

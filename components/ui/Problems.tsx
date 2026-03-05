@@ -1,11 +1,11 @@
-import { SpaceGrotesk, SpaceGroteskBold } from '@/lib/utils';
+import { SpaceGroteskBold } from '@/lib/utils';
 import { AlertCircle, Zap, ShieldAlert, Cpu, TrendingDown, ArrowRight } from 'lucide-react';
 import React from 'react';
 
 const problems = [
   {
     title: 'Manual processes slowing growth',
-    description: 'Repetitive tasks are eating up your team\'s time and preventing you from scaling efficiently.',
+    description: 'Repetitive tasks are eating up your team&apos;s time and preventing you from scaling efficiently.',
     icon: <Zap className="text-pink-500" size={24} />,
   },
   {
@@ -15,7 +15,7 @@ const problems = [
   },
   {
     title: 'Poor system architecture',
-    description: 'Your current infrastructure is fragile and can\'t support the demands of a growing business.',
+    description: 'Your current infrastructure is fragile and can&apos;t support the demands of a growing business.',
     icon: <Cpu className="text-purple-500" size={24} />,
   },
   {
@@ -39,7 +39,7 @@ const Problems = () => {
             Scaling Is Hard When Your <span className="mx-color">Systems Are Fragile</span>
           </h2>
           <p className="text-gray-400 text-lg md:text-xl">
-            We understand the frustration of technical debt. We've seen businesses struggle with the same bottlenecks you're facing.
+            We understand the frustration of technical debt. We&apos;ve seen businesses struggle with the same bottlenecks you&apos;re facing.
           </p>
         </div>
 
@@ -66,7 +66,7 @@ const Problems = () => {
               Sound familiar?
             </h3>
             <p className="text-gray-300 mb-8">
-              You're not alone. We help businesses transform these vulnerabilities into scalable foundations.
+              You&apos;re not alone. We help businesses transform these vulnerabilities into scalable foundations.
             </p>
             <a href="#solutions" className="text-indigo-400 font-bold hover:text-indigo-300 transition-colors flex items-center gap-2">
               Discover the Solution <ArrowRight size={20} />

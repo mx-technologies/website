@@ -1,14 +1,13 @@
 'use client';
 
-import { Drawer, Sidebar } from 'flowbite-react';
+import { Drawer } from 'flowbite-react';
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
 import { AiFillHome, AiOutlineInfoCircle, AiOutlineMail } from 'react-icons/ai';
-import { FaFolderOpen, FaServicestack, FaUsers } from 'react-icons/fa';
-import { FaCogs } from 'react-icons/fa';
+import { FaFolderOpen, FaServicestack } from 'react-icons/fa';
 
 const SidebarMenu = ({ activeSection }: { activeSection: string }) => {
   const [isOpen, setIsOpen] = useState(false);

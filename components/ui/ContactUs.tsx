@@ -1,4 +1,4 @@
-import { SpaceGrotesk, SpaceGroteskBold } from '@/lib/utils';
+import { SpaceGroteskBold } from '@/lib/utils';
 import React from 'react';
 import { Mail, MessageCircle, Calendar, GraduationCap } from 'lucide-react';
 
