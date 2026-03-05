@@ -6,8 +6,8 @@ import MagicButton from './MagicButton';
 
 const currencies = [
   { code: 'NGN', symbol: '₦', label: 'NGN', flag: '🇳🇬' },
-  { code: 'USD', symbol: '$', label: 'USD', flag: '🇺🇸' },
-  { code: 'CAD', symbol: '$', label: 'CAD', flag: '🇨🇦' },
+  { code: 'USD', symbol: 'US$', label: 'USD', flag: '🇺🇸' },
+  { code: 'CAD', symbol: 'CA$', label: 'CAD', flag: '🇨🇦' },
   { code: 'GBP', symbol: '£', label: 'GBP', flag: '🇬🇧' },
   { code: 'GHS', symbol: 'GH₵', label: 'GHS', flag: '🇬🇭' },
   { code: 'ZAR', symbol: 'R', label: 'ZAR', flag: '🇿🇦' },
@@ -97,20 +97,24 @@ const Pricing = () => {
           </p>
 
           {/* Currency Switcher */}
-          <div className="inline-flex p-1 bg-black-200/60 rounded-2xl border border-white/5 backdrop-blur-sm mb-8">
-            {currencies.map((currency) => (
-              <button
-                key={currency.code}
-                onClick={() => setSelectedCurrency(currency)}
-                className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold transition-all duration-300 ${selectedCurrency.code === currency.code
-                  ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-500/30'
-                  : 'text-gray-500 hover:text-gray-300'
-                  }`}
-              >
-                <span>{currency.flag}</span>
-                {currency.label}
-              </button>
-            ))}
+          <div className="flex justify-center mb-8">
+            <div className="inline-flex p-1 bg-black-200/60 rounded-2xl border border-white/5 backdrop-blur-sm overflow-x-auto max-w-full no-scrollbar">
+              <div className="flex gap-1 min-w-max">
+                {currencies.map((currency) => (
+                  <button
+                    key={currency.code}
+                    onClick={() => setSelectedCurrency(currency)}
+                    className={`flex items-center gap-2 px-3 py-2 md:px-4 rounded-xl text-xs md:text-sm font-bold transition-all duration-300 ${selectedCurrency.code === currency.code
+                      ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-500/30'
+                      : 'text-gray-500 hover:text-gray-300'
+                      }`}
+                  >
+                    <span>{currency.flag}</span>
+                    {currency.label}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 
@@ -120,7 +124,7 @@ const Pricing = () => {
             return (
               <div
                 key={index}
-                className={`relative flex flex-col p-10 rounded-[2.5rem] bg-black-200/40 border border-white/5 transition-all duration-500 hover:scale-[1.02] ${tier.featured ? 'border-indigo-500/50 shadow-[0_0_40px_rgba(79,70,229,0.2)]' : ''
+                className={`relative flex flex-col p-6 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-black-200/40 border border-white/5 transition-all duration-500 hover:scale-[1.02] ${tier.featured ? 'border-indigo-500/50 shadow-[0_0_40px_rgba(79,70,229,0.2)]' : ''
                   }`}
               >
                 {tier.featured && (
@@ -139,7 +143,7 @@ const Pricing = () => {
                         {selectedCurrency.symbol}
                       </span>
                     )}
-                    <span className={`${SpaceGroteskBold.className} text-5xl text-white`}>
+                    <span className={`${SpaceGroteskBold.className} text-3xl md:text-5xl text-white`}>
                       {price}
                     </span>
                     {price !== 'Custom' && <span className="text-gray-400 text-sm">/ Project Start</span>}

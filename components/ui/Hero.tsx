@@ -1,4 +1,4 @@
-import { SpaceGrotesk } from '@/lib/utils';
+import { SpaceGrotesk, SpaceGroteskBold } from '@/lib/utils';
 import Image from 'next/image';
 import { ButtonGenerateEffect } from './ButtonGenerateEffect';
 
@@ -55,11 +55,11 @@ const Hero = () => {
            */}
           <TextGenerateEffect
             words='We Build Scalable Software & Automation Systems That Power Growing Businesses'
-            className={`${SpaceGrotesk.className} text-center py-2 text-[32px] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight transition-all duration-300`}
+            className={`${SpaceGroteskBold.className} text-center py-2 text-[32px] sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl leading-none font-black tracking-tighter transition-all duration-300`}
           />
           <TextGenerateEffect
             words='We help startups, SMEs, and enterprises automate operations, reduce inefficiencies, and build scalable backend systems.'
-            className={`${SpaceGrotesk.className} text-center mt-6 md:mt-8 text-base sm:text-lg md:text-xl lg:text-2xl text-neutral-300 w-full md:w-[90%] lg:w-[80%]`}
+            className={`${SpaceGrotesk.className} text-center mt-8 md:mt-10 text-base sm:text-lg md:text-xl lg:text-2xl text-neutral-400 font-medium w-full md:w-[90%] lg:w-[80%]`}
           />
 
           <div className='mt-10 md:mt-16 flex flex-col sm:flex-row items-center justify-center gap-5 w-full px-6 sm:px-0'>

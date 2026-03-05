@@ -138,6 +138,7 @@ const Nav = ({
                     { name: 'Process', link: '/#process' },
                     { name: 'Works', link: '/#works' },
                     { name: 'About', link: '/about-us' },
+                    { name: 'Contact', link: '/#contact-us' },
                   ].map((item) => {
                     const active = isLinkActive(item);
                     return (
@@ -170,7 +171,7 @@ const Nav = ({
                     className='relative inline-flex h-11 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50'
                   >
                     <span className='absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2E8F0_0%,#4A5568_50%,#E2E8F0_100%)]' />
-                    <span className='inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-6 py-1 text-sm font-medium text-white backdrop-blur-3xl transition-all hover:bg-slate-900'>
+                    <span className='inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-4 md:px-6 py-1 text-xs md:text-sm font-medium text-white backdrop-blur-3xl transition-all hover:bg-slate-900'>
                       Get Started
                     </span>
                   </Link>
