@@ -78,7 +78,7 @@ const Hero = () => {
             <ButtonGenerateEffect
               className="w-full sm:w-auto"
               el={
-                <a href='https://calendar.google.com/calendar/u/0/appointments/schedules' target='_blank' className="w-full sm:w-fit block">
+                <a href='https://calendly.com/hello-mxtechnologies/30min' target='_blank' className="w-full sm:w-fit block">
                   <MagicButton
                     title='Book Strategy Call'
                     position='right'
